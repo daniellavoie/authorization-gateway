@@ -1,0 +1,16 @@
+authorization:
+  gateway:
+     routes:
+       user:
+         get-user:
+           method: GET
+           host: localhost:8080
+           path: /user
+           scopes: cloud_controller.read
+           redirect-host: http://localhost:8081/user
+         put-user:
+           method: PUT
+           host: localhost:8080
+           path: /user
+           scopes: cloud_controller.read
+           redirect-host: http://localhost:8081/user
